@@ -75,6 +75,10 @@
 
 
 
+
+
+
+
 @media(max-width: 850px) {
     .main-section>main>.section {
         grid-template-columns: 1fr 1fr 1fr;
@@ -87,6 +91,7 @@
 @media(max-width: 600px) {
     .main-section>main>.section{
         gap: 7px;
+        grid-template-columns: 1fr 1fr;
     }
     .main-section>main>.section>div {
         padding: 8px;
