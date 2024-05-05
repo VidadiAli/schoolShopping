@@ -10,7 +10,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     width: var(--widthOfElements);
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 .main-section>main>.section>div {
@@ -89,15 +89,17 @@
 
 
 @media(max-width: 600px) {
-    .main-section>main>.section{
+    .main-section>main>.section {
         gap: 7px;
         grid-template-columns: 1fr 1fr;
     }
+
     .main-section>main>.section>div {
         padding: 8px;
         font-size: 80%;
     }
-    .main-section>main>.section>div>h2{
+
+    .main-section>main>.section>div>h2 {
         font-size: .94rem;
     }
 
