@@ -1,0 +1,103 @@
+.main-section>main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.main-section>main>.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: var(--widthOfElements);
+    margin: 0 auto;
+}
+
+.main-section>main>.section>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: rgb(219, 219, 219);
+    padding: 15px;
+}
+
+.main-section>main>.section>div>div {
+    width: 100%;
+    padding: 100px 0;
+    background-color: gray;
+    position: relative;
+}
+
+.main-section>main>.section>div>div>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.main-section>main>.section>div>div>span {
+    color: white;
+    background-color: var(--bgColor2);
+    padding: 5px 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.main-section>main>.section>div>h2 {
+    color: rgb(81, 81, 81);
+    font-size: 1rem;
+}
+
+.main-section>main>.section>div>span {
+    color: gray;
+}
+
+.main-section>main>.section>div>button {
+    border-radius: 5px;
+    background-color: var(--bgColor1);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 20px 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.main-section>main>.section>div>button:hover {
+    background-color: rgb(2, 39, 71);
+}
+
+
+
+
+@media(max-width: 850px) {
+    .main-section>main>.section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+
+@media(max-width: 600px) {
+    .main-section>main>.section{
+        gap: 7px;
+    }
+    .main-section>main>.section>div {
+        padding: 8px;
+        font-size: 80%;
+    }
+    .main-section>main>.section>div>h2{
+        font-size: .94rem;
+    }
+
+    .main-section>main>.section>div>button {
+        font-size: .75rem;
+        padding: 13px 0;
+    }
+}
