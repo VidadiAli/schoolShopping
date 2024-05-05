@@ -257,7 +257,7 @@
 
 @media(max-width: 600px) {
     .main-section>header {
-        height: 160px;
+        height: 145px;
     }
 
     .main-section>header>.sosial-menu {
