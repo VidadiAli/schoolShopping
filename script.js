@@ -8,7 +8,10 @@ callSearchArea();
 const callMain = async (url, sinif, bolum) => {
 
     main.innerHTML = '';
-
+    if (window.innerWidth < 1050) {
+        ul.classList.toggle('come-go');
+        document.getElementsByClassName('bx bx-grid-alt')[0].classList.toggle('grid-color');
+    }
     const arrayOfDers = await (await fetch(url)).json();
 
     const section = document.createElement('section');
